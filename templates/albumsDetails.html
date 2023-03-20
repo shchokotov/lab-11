@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div class="d-flex justify-content-center align-items-center mt-5 mb-5">
+<div class="col-md-10 ">
+    <div class="row g-0  overflow-hidden flex-md-row mb-4  h-md-250 position-relative">
+      <div class="col p-4 d-flex flex-column position-static">
+        <strong class="d-inline-block mb-2 text-primary">SKOFKA</strong>
+        <h3 class="title mb-0 text-warning">{{ album.title }}</h3>
+        <div class="mb-1 text-muted">{{ album.dateOfRelease }}</div>
+        <p class="card-text mb-auto">{{album.discription}}</p>
+      </div>
+      <div class="col-auto d-none d-lg-block">
+        <img src="/static/photos/{{album.picture}}"
+          class="d-block mx-lg-auto img-fluid p-3 me-3 bg-white rounded" width="400" height="420" loading="lazy">
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

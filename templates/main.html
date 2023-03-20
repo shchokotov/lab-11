@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+
+
+
+<div class="album mt-4">
+    <div class="container mb-5">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+                <div class="card shadow-sm pt-4">
+                    <img src="{{ url_for('static', filename='photos/skofka.png') }}"
+                        class="d-block mx-lg-auto img-fluid" width="300" height="500" loading="lazy">
+                    <div class="card-body">
+                        <p class="card-text">{{auth}}Skofka — справжній реп-прорив 2021-го року.
+                            Його пісні потрапили до трендів українського Youtube та зібрали понад 10 мільйонів
+                            переглядів.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <small class="text-muted">17 жовтня 2021 року Skofka офіційно приєднався до ENKO.</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm pt-4">
+                    <img src="{{ url_for('static', filename='photos/sk1.jpg') }}"
+                        class="d-block mx-lg-auto img-fluid" width="405" height="500" loading="lazy">
+                    <div class="card-body">
+                        <p class="card-text">У 2020-му році музикант став займатися репом серйозно: придбав необхідну
+                            апаратуру для запису та почав викладати свої треки на Youtube-каналі.
+                        </p>
+                        <div class="d-flex align-items-center">
+                            <small class="text-muted">Перший трек «Балалайка» був презентований 2 лютого 2020-го року.
+                                Та пісня, що принесла Skofka справжнє визнання — «Геть за забор»</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm pt-4">
+                    <img src="{{ url_for('static', filename='photos/skofka2.png') }}"
+                        class="d-block mx-lg-auto img-fluid" width="350" height="500" loading="lazy">
+                    <div class="card-body">
+                        <p class="card-text">Репер сам пише тексти пісень, займається їхніми аранжуваннями, зводить
+                            треки та часом навіть самотужки продюсує відеокліпи.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <small class="text-muted">Для нього головне — створювати якісну музику та довести, що
+                                український реп може звучати круто.</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+</div>
+</div>
+</div>
+{% endblock %}
